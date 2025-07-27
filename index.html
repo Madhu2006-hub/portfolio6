@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Madhu Varshini | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #7c3aed;
+      --secondary-color: #06b6d4;
+      --accent-color: #facc15;
+      --background: #fefce8;
+      --text: #1e293b;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+      color: var(--white);
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      font-weight: 300;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: var(--accent-color);
+    }
+
+    nav a {
+      color: var(--text);
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: var(--secondary-color);
+      color: var(--white);
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: var(--primary-color);
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      border-bottom: 3px dashed var(--accent-color);
+      display: inline-block;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-left: 6px solid var(--primary-color);
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      color: var(--secondary-color);
+      font-weight: 600;
+    }
+
+    footer {
+      background: var(--primary-color);
+      color: var(--white);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: var(--accent-color);
+      color: var(--text);
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 10px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: var(--secondary-color);
+      color: var(--white);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Garikipati Madhu Varshini</h1>
+    <p>Aspiring Machine learning Engineer | B.Tech CAI</p>
+    <a href="#contact" class="btn">Contact Me</a>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#participations">Participations</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate Computer Science student, eager to contribute to innovative projects and apply programming, problem-solving, and teamwork skills in a software development role.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>Languages: Python, Java, C</li>
+      <li>Web: HTML, CSS, JavaScript</li>
+      <li>Database: SQL</li>
+      <li>Tools: Jupyter Notebook, VS Code</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Fake News Detection (2025)</h3>
+        <p>Used NLP techniques and ML models (SVM, Logistic Regression) to detect fake news.</p>
+      </div>
+      <div class="project-card">
+        <h3>Performance Tracking System (2024)</h3>
+        <p>Built using Python and Java for task monitoring and performance reporting.</p>
+      </div>
+      <div class="project-card">
+        <h3>Farmers Market Access App (2024)</h3>
+        <p>Android app using Java + Firebase for direct farmer-to-buyer transactions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>B.Tech in Computer Science and Artificial Intelligence (2023–2027)</strong><br>Sri Vasavi Engineering College, Tadepalligudem<br>CGPA: 8.49/10</p>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Data Analytics with Python – NPTEL (2025)</li>
+      <li>Freedom with AI Masterclass – Freedom with AI (2025)</li>
+      <li>Generative AI Workshop – NXT Wave (2025)</li>
+    </ul>
+  </section>
+
+  <section id="participations">
+    <h2>Participations</h2>
+    <ul>
+      <li>Code Hackathon, Sri Vasavi Engineering College (2024)</li>
+      
+      <li>Smart India Hackathon (2024)</li>
+      <li>Participant - Youth Parliament Mock Debate, Enhancing Communication & Policy Awareness (2024)</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:madhuvarshinigarikipati@gmail.com">madhuvarshinigarikipati@gmail.com</a></p>
+    <p>Phone: 7989553966</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/garikipati-madhu-varshini41521929a" target="_blank">LinkedIn Profile</a></p>
+    <p>GitHub: <a href="https://github.com/madhu2006-hub" target="_blank">madhu2006-hub</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Madhu Varshini | All rights reserved.</p>
+  </footer>
+</body>
+</html>
